@@ -1,3 +1,0 @@
-- op: add
-  path: /metadata/annotations/postgres-operator.crunchydata.com~1autoCreateUserSchema
-  value: 'true'
