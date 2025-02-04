@@ -8,9 +8,9 @@ spec:
   generators:
   - git:
       repoURL: https://github.com/kamlendu1982/gitops-catalog.git
-      revision: cust_aap
+      revision: aap-2.5
       directories:
-      - path: ansible-automation-platform/operator/overlays/stable-2.4
+      - path: ansible-automation-platform/operator/overlays/stable-2.5
       - path: ansible-automation-platform/instance/overlays/default
       - path: ansible-automation-platform/hub-instance/overlays/default
       - path: ansible-automation-platform/eda-instance/overlays/default
@@ -24,7 +24,7 @@ spec:
       # Source of the application manifests
       source:
         repoURL: https://github.com/kamlendu1982/gitops-catalog.git
-        targetRevision: cust_aap
+        targetRevision: aap-2.5
         path: '{{.path.path}}'
 
       # Destination cluster and namespace to deploy the application
