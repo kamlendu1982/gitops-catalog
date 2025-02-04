@@ -1,5 +1,0 @@
-- op: add
-  path: /spec/config/env/-
-  value:
-    name: PGO_FEATURE_GATES
-    value: AutoCreateUserSchema=true

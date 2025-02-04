@@ -1,6 +1,0 @@
-- op: add
-  path: /spec/users/-
-  value:
-    name: dbuser
-    databases:
-      - db
