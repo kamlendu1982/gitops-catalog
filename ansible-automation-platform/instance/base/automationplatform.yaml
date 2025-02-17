@@ -1,0 +1,24 @@
+apiVersion: aap.ansible.com/v1alpha1
+kind: AnsibleAutomationPlatform
+metadata:
+  name: wbd-gitops
+  namespace: ansible-automation-platform
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  api:
+    log_level: INFO
+    replicas: 1
+  controller:
+    disabled: false
+  database:
+    postgres_data_volume_init: false
+  eda:
+    disabled: false
+  hub:
+    disabled: false
+    object_storage_s3_secret: wbd-aap-hub-secret
+    storage_type: s3
+  no_log: false
+  redis_mode: standalone
+  route_tls_termination_mechanism: Edge
