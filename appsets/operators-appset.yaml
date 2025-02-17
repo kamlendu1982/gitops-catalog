@@ -9,7 +9,7 @@ spec:
   - git:
       repoURL: https://github.com/kamlendu1982/gitops-catalog.git
       revision: aap-2.5
-      directories:
+      #directories:
       #- path: ansible-automation-platform/operator/overlays/stable-2.5
       #- path: ansible-automation-platform/instance/overlays/default
       #- path: ansible-automation-platform/hub-instance/overlays/default
