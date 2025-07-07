@@ -5,3 +5,4 @@ kind: Kustomization
 resources:
   - install.yaml
   #- platform.yaml
+  #- sub.yaml
