@@ -18,7 +18,7 @@ spec:
   hub:
     disabled: false
     object_storage_s3_secret: wbd-aap-hub-secret
-    storage_type: s3
+    storage_type: S3
   no_log: false
   redis_mode: standalone
   route_tls_termination_mechanism: Edge
